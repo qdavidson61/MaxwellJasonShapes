@@ -1,22 +1,17 @@
-public class TriangularPrism extends Rectangular{
-    private double side1, side2, side3, height;
-
-    public TriangularPrism(double a, double b, double c, double height) {
-        this.side1 = a;
-        this.side2 = b;
-        this.side3 = c;
-        this.height = height;
+public class TriangularPrism extends Rectangular {
+    private double height, base, width;
+    public TriangularPrism(double height, double base, double width) {
+        super(height, base, width);
     }
 
+    @Override
     public double volume() {
-        double s = (side1 + side2 + side3) / 2;
-        double baseArea = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
-        return baseArea * height;
+        return height * (base * width) / 2;
     }
 
+    @Override
     public double surfaceArea() {
-        double s = (side1 + side2 + side3) / 2;
-        double baseArea = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
-        return baseArea * 2 + (side1 + side2 + side3) * height;
+        double triangleArea = (base * width) / 2;
+        return triangleArea * 2 + height * base + height * width;
     }
 }

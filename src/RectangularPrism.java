@@ -1,17 +1,15 @@
-public class RectangularPrism extends Rectangular{
-    private double height, width, length;
-
-    public RectangularPrism(double height, double width, double length) {
-        this.height = height;
-        this.width = width;
-        this.length = length;
+public class RectangularPrism extends Rectangular {
+    private double height, length, width;
+    public RectangularPrism(double height, double length, double width) {
+        super(height, length, width);
     }
 
+
     public double volume() {
-        return height * width * length;
+        return height * length * width;
     }
 
     public double surfaceArea() {
-        return 2 * (height * width + height * length + width * length);
+        return 2 * (length * width + height * length + height * width);
     }
 }

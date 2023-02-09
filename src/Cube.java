@@ -1,15 +1,15 @@
-public class Cube extends Rectangular{
-    private double length, width, area;
-    public Cube(double length, double width){
-        this.length = length;
-        this.width = width;
-        area = length * width;
+public class Cube extends Rectangular {
+    private double height, length, width;
+    public Cube(double side) {
+        super(side, side, side);
     }
 
-    public double volume(){
-        return Math.pow(area, 3);
+
+    public double volume() {
+        return Math.pow(height, 3);
     }
-    public double surfaceArea(){
-        return 6 * Math.pow(area,2);
+
+    public double surfaceArea() {
+        return 6 * Math.pow(height, 2);
     }
 }

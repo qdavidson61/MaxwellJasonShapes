@@ -1,11 +1,15 @@
-public class Cylinder extends Circular{
+public class Cylinder extends Circular {
     private double radius, height;
+    public Cylinder(double height, double radius) {
+        super(height, radius);
+    }
 
-    public double volume(){
+
+    public double volume() {
         return Math.PI * Math.pow(radius, 2) * height;
     }
 
-    public double surfaceArea(){
-        return 2 * Math.PI * radius * height + 2 * Math.PI * Math.pow(radius, 2);
+    public double surfaceArea() {
+        return 2 * Math.PI * radius * (radius + height);
     }
 }

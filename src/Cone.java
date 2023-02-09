@@ -1,15 +1,16 @@
-public class Cone extends Circular{
-    private double radius, slantH;
-    public Cone(double radius, double slantH){
-        this.radius = radius;
-        this.slantH = slantH;
+public class Cone extends Circular {
+    private double height, radius;
+    public Cone(double height, double radius) {
+        super(height, radius);
     }
 
-    public double volume(){
-        return Math.PI * Math.pow(radius, 2) * (slantH / 3);
+
+    public double volume() {
+        return Math.PI * Math.pow(radius, 2) * height / 3;
     }
 
-    public double surfaceArea(){
-        return (Math.PI * radius * (radius + Math.sqrt(Math.pow(slantH, 2) * Math.pow(radius, 2))));
+    public double surfaceArea() {
+        double slantHeight = Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2));
+        return Math.PI * radius * (radius + slantHeight);
     }
 }
