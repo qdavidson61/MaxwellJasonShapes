@@ -1,3 +1,9 @@
+/**
+ *
+ * @author :
+ * @since :
+ */
+
 public class Cone extends Circular {
     private double height, radius;
     public Cone(double height, double radius) {

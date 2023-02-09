@@ -1,3 +1,9 @@
+/**
+ *
+ * @author :
+ * @since :
+ */
+
 public class TriangularPrism extends Rectangular {
     private double height, base, width;
     public TriangularPrism(double height, double base, double width) {

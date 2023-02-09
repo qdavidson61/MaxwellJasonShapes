@@ -1,3 +1,9 @@
+/**
+ *
+ * @author :
+ * @since :
+ */
+
 public abstract class Rectangular implements Shape {
     private double height, length, width;
 

@@ -1,3 +1,9 @@
+/**
+ *
+ * @author :
+ * @since :
+ */
+
 public class Cube extends Rectangular {
     private double height, length, width;
     public Cube(double side) {
