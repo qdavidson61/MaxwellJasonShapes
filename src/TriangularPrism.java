@@ -16,7 +16,7 @@ public class TriangularPrism extends Rectangular {
     }
 
     public double surfaceArea() {
-        double triangleArea = (base * width) / 2;
-        return triangleArea * 2 + height * base + height * width;
+        //double triangleArea = (base * width) / 2;
+        return (base * width) / 2 * 2 + height * base + height * width;
     }
 }
