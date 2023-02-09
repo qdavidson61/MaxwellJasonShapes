@@ -10,6 +10,6 @@ public class Cone extends Circular{
     }
 
     public double surfaceArea(){
-        return Math.PI * radius * (radius + Math.sqrt(Math.pow(slantH, 2) * Math.pow(radius, 2)));
+        return (Math.PI * radius * (radius + Math.sqrt(Math.pow(slantH, 2) * Math.pow(radius, 2))));
     }
 }

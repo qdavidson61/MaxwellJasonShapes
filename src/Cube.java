@@ -10,6 +10,6 @@ public class Cube extends Rectangular{
         return Math.pow(area, 3);
     }
     public double surfaceArea(){
-        return Math.pow(area,2) * 6;
+        return 6 * Math.pow(area,2);
     }
 }
