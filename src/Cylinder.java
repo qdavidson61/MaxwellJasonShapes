@@ -1,7 +1,7 @@
 /**
  *
- * @author :
- * @since :
+ * @author : Jason Parker, Quinn Davidson
+ * @since : 02/09/2023
  */
 
 public class Cylinder extends Circular {
