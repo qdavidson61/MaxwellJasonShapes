@@ -7,5 +7,8 @@
 public class ClientClass {
     public static void main(String[] args) {
         System.out.println("Hello Group Project");
+
+        Cube c = new Cube(6);
+        System.out.println(c.surfaceArea());
     }
 }
