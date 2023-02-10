@@ -5,7 +5,6 @@
  */
 
 public class RectangularPrism extends Rectangular {
-    private double height, length, width;
 
     /**
      * Instantiates RectangularPrism object.
@@ -22,7 +21,7 @@ public class RectangularPrism extends Rectangular {
      * @return double containing volume.
      */
     public double volume() {
-        return height * length * width;
+        return getHeight() * getLength() * getWidth();
     }
 
     /**
@@ -30,6 +29,6 @@ public class RectangularPrism extends Rectangular {
      * @return double containing surface area.
      */
     public double surfaceArea() {
-        return 2 * (length * width + height * length + height * width);
+        return 2 * (getLength() * getWidth() + getHeight() * getLength() + getHeight() * getWidth());
     }
 }

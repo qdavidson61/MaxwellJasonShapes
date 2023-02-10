@@ -5,7 +5,6 @@
  */
 
 public class Cylinder extends Circular {
-    private double radius, height;
 
     /**
      * Instantiates Cylinder object.
@@ -21,7 +20,7 @@ public class Cylinder extends Circular {
      * @return double containing volume.
      */
     public double volume() {
-        return Math.PI * Math.pow(radius, 2) * height;
+        return Math.PI * Math.pow(getRadius(), 2) * getHeight();
     }
 
     /**
@@ -29,6 +28,6 @@ public class Cylinder extends Circular {
      * @return double containing surface area.
      */
     public double surfaceArea() {
-        return 2 * Math.PI * radius * (radius + height);
+        return 2 * Math.PI * getRadius() * (getRadius() + getHeight());
     }
 }

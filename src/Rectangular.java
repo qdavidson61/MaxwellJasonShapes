@@ -42,9 +42,5 @@ public abstract class Rectangular implements Shape {
     public double getWidth() {
         return width;
     }
-    public Rectangular(double length){
-        this.length = length;
-        width = 0;
-        height = 0;
-    }
+
 }

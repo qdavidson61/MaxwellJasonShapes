@@ -5,7 +5,6 @@
  */
 
 public class Sphere extends Circular {
-    private double radius;
 
     /**
      * Instantiates Sphere object.
@@ -20,7 +19,7 @@ public class Sphere extends Circular {
      * @return double containing volume.
      */
     public double volume() {
-        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+        return (4.0 / 3.0) * Math.PI * Math.pow(getRadius(), 3);
     }
 
     /**
@@ -28,6 +27,6 @@ public class Sphere extends Circular {
      * @return double containing surface area.
      */
     public double surfaceArea() {
-        return 4 * Math.PI * Math.pow(radius, 2);
+        return 4 * Math.PI * Math.pow(getRadius(), 2);
     }
 }

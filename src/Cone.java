@@ -4,16 +4,16 @@
  * @since : 02/09/2023
  */
 
+
 public class Cone extends Circular {
-    private double slantHeight, radius;
 
     /**
-     * Instanties Cone object.
-     * @param slantHeight contains height of Cone object.
+     * Instantiates Cone object.
+     * @param height contains height of Cone object.
      * @param radius contains radius of Cone object.
      */
-    public Cone(double slantHeight, double radius) {
-        super(slantHeight, radius);
+    public Cone(double height, double radius) {
+        super(height, radius);
     }
 
     /**
@@ -21,7 +21,7 @@ public class Cone extends Circular {
      * @return double containing volume.
      */
     public double volume() {
-        return Math.PI * Math.pow(radius, 2) * slantHeight / 3;
+        return Math.PI * Math.pow(getRadius(), 2) * getHeight() / 3;
     }
 
     /**
@@ -30,6 +30,6 @@ public class Cone extends Circular {
      */
     public double surfaceArea() {
         //double slantHeight = Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2));
-        return Math.PI * radius * (radius + Math.sqrt(Math.pow(radius, 2) + Math.pow(slantHeight, 2)));
+        return Math.PI * getRadius() * (getRadius() + Math.sqrt(Math.pow(getRadius(), 2) + Math.pow(getHeight(), 2)));
     }
 }

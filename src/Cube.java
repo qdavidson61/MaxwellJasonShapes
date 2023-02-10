@@ -4,9 +4,7 @@
  * @since : 02/09/2023
  */
 
-public class Cube extends Rectangular {
-
-    private double height, length, width;
+public class Cube extends RectangularPrism {
 
     /**
      * This instantiates Cube object.
@@ -21,7 +19,7 @@ public class Cube extends Rectangular {
      * @return double containing volume.
      */
     public double volume() {
-        return Math.pow(height, 3);
+        return Math.pow(getHeight(), 3);
     }
 
     /**
@@ -29,6 +27,6 @@ public class Cube extends Rectangular {
      * @return double containing surface area.
      */
     public double surfaceArea() {
-        return 6 * Math.pow(height, 2);
+        return 6 * Math.pow(getHeight(), 2);
     }
 }

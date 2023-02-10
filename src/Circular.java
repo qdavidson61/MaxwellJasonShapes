@@ -16,7 +16,8 @@ public abstract class Circular implements Shape {
         this.height = height;
         this.radius = radius;
     }
-
+    public abstract double volume();
+    public abstract double surfaceArea();
     /**
      * Returns height of circular object.
      * @return double height of object.
