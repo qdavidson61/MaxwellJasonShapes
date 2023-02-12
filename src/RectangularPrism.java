@@ -5,7 +5,6 @@
  */
 
 public class RectangularPrism extends Rectangular {
-
     /**
      * Instantiates RectangularPrism object.
      * @param height contains height of rectangular prism.

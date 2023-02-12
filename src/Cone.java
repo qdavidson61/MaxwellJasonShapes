@@ -21,7 +21,7 @@ public class Cone extends Circular {
      * @return double containing volume.
      */
     public double volume() {
-        return Math.PI * Math.pow(getRadius(), 2) * getHeight() / 3;
+        return (Math.PI * Math.pow(getRadius(), 2) * getHeight() / 3);
     }
 
     /**
@@ -30,6 +30,7 @@ public class Cone extends Circular {
      */
     public double surfaceArea() {
         //double slantHeight = Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2));
-        return Math.PI * getRadius() * (getRadius() + Math.sqrt(Math.pow(getRadius(), 2) + Math.pow(getHeight(), 2)));
+        return Math.PI * getRadius() * (getRadius() + Math.sqrt(Math.pow(getRadius(), 2)
+                + Math.pow(getHeight(), 2)));
     }
 }

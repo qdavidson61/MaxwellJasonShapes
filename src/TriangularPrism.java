@@ -1,20 +1,25 @@
+import java.util.Scanner;
+
 /**
  * Blueprint to create TriangularPrism object.
  * @author : Jason Parker, Quinn Davidson
  * @since : 02/09/2023
  */
 
-public class TriangularPrism extends Rectangular {
-    private double height, length, width;
-
+public class TriangularPrism  {
+    private double base, height, length, hypotenuse;
     /**
      * Instantiates TriangularPrism object.
-     * @param height contains height of triangular prism.
-     * @param length contains the base length of triangular prism.
-     * @param width contains width of triangular prism.
+     * //NOTE: THIS IS FOR A RIGHT TRIANGULAR PRISM ONLY!
+     * @param base contains height of triangular prism.
+     * @param height contains the base length of triangular prism.
+     * @param length contains width of triangular prism.
      */
-    public TriangularPrism(double height, double length, double width) {
-        super(height, length, width);
+    public TriangularPrism(double base, double height, double length) {
+        this.base = base;
+        this.height = height;
+        this.length = length;
+        hypotenuse = Math.sqrt(Math.pow(height,2) + Math.pow(base,2));
     }
 
     /**
@@ -22,7 +27,7 @@ public class TriangularPrism extends Rectangular {
      * @return double containing volume.
      */
     public double volume() {
-        return height * (length * width) / 2;
+        return 0.5 * base * height * length;
     }
 
     /**
@@ -30,7 +35,6 @@ public class TriangularPrism extends Rectangular {
      * @return double containing surface area.
      */
     public double surfaceArea() {
-        //double triangleArea = (base * width) / 2;
-        return (length * width) / 2 * 2 + height * length + height * width;
+        return (base*height) + ((base + height + hypotenuse) * length);
     }
 }
