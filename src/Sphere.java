@@ -2,6 +2,7 @@
  * Blueprint to create Sphere object.
  * @author : Jason Parker, Quinn Davidson
  * @since : 02/09/2023
+ * @version : 1.0
  */
 
 public class Sphere extends Circular {

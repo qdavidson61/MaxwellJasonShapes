@@ -2,6 +2,7 @@
  * Contains client code testing Shape interface along with its children and grandchildren.
  * @author : Jason Parker, Quinn Davidson
  * @since : 02/09/2023
+ * @version : 1.0
  */
 
 import org.w3c.dom.ls.LSOutput;

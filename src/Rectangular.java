@@ -2,6 +2,7 @@
  * Creates rectangular object guidelines.
  * @author : Jason Parker, Quinn Davidson
  * @since : 02/09/2023
+ * @version : 1.0
  */
 
 public abstract class Rectangular implements Shape {

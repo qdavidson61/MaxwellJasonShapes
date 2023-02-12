@@ -2,6 +2,7 @@
  * Blueprint to create Cylinder object.
  * @author : Jason Parker, Quinn Davidson
  * @since : 02/09/2023
+ * @version : 1.0
  */
 
 public class Cylinder extends Circular {
